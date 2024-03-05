@@ -7,6 +7,6 @@
   programs.git = {
     enable = true;
     userName = "Allan Fernandes";
-    userEmail = "allancravd@gmail";
+    userEmail = "allancravd@gmail.com";
   };
 }
