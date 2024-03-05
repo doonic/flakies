@@ -1,6 +1,12 @@
 { config, pkgs, inputs, ... }:
 
 {
+
+ imports = [
+   ./programs
+  ];
+
+  # Home Manager needs information about you and the paths it should manage.
   home.username = "doni";
   home.homeDirectory = "/home/doni";
   nixpkgs = {
@@ -66,14 +72,7 @@
   ];
 
 
-  # git configuration
-  programs.git = {
-    enable = true;
-    userName = "Allan Fernandes";
-    userEmail = "allancravd@gmail.com";
-
-  };
-
+ 
   home.stateVersion = "23.11";
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true; 
